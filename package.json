@@ -5,6 +5,7 @@
     "days/*"
   ],
   "scripts": {
-    "day-01": "yarn workspace day-01"
+    "day-01": "yarn workspace day-01",
+    "day-02": "yarn workspace day-02"
   }
 }

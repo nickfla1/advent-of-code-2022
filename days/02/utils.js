@@ -1,0 +1,40 @@
+const SCORE_ROCK = 1;
+const SCORE_PAPER = 2;
+const SCORE_SCISSORS = 3;
+
+const SCORE_ROUND_LOST = 0;
+const SCORE_ROUND_DRAW = 3;
+const SCORE_ROUND_WON = 6;
+
+const T_ROCK = "rock";
+const T_PAPER = "paper";
+const T_SCISSORS = "scissors";
+
+const OUTCOME_LOST = "lost";
+const OUTCOME_DRAW = "draw";
+const OUTCOME_WON = "win";
+
+const DECODED_SCORE = {
+  [T_ROCK]: SCORE_ROCK,
+  [T_PAPER]: SCORE_PAPER,
+  [T_SCISSORS]: SCORE_SCISSORS,
+};
+
+const OUTCOME_SCORE = {
+  [OUTCOME_LOST]: SCORE_ROUND_LOST,
+  [OUTCOME_DRAW]: SCORE_ROUND_DRAW,
+  [OUTCOME_WON]: SCORE_ROUND_WON,
+};
+
+module.exports = {
+  T_ROCK,
+  T_PAPER,
+  T_SCISSORS,
+
+  OUTCOME_LOST,
+  OUTCOME_DRAW,
+  OUTCOME_WON,
+
+  DECODED_SCORE,
+  OUTCOME_SCORE,
+};

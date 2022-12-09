@@ -1,0 +1,7 @@
+{
+  "name": "day-02",
+  "scripts": {
+    "p1": "node part-1.js",
+    "p2": "node part-2.js"
+  }
+}
