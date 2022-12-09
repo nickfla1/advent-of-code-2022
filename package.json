@@ -1,0 +1,10 @@
+{
+  "name": "advent-of-code-2022",
+  "packageManager": "yarn@3.3.0",
+  "workspaces": [
+    "days/*"
+  ],
+  "scripts": {
+    "day-01": "yarn workspace day-01"
+  }
+}

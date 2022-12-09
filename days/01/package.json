@@ -1,0 +1,6 @@
+{
+  "name": "day-01",
+  "scripts": {
+    "start": "node main.js"
+  }
+}
