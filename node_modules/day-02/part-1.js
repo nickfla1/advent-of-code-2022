@@ -1,15 +1,14 @@
-const { readFileSync } = require("fs");
+import { sumOf } from "@nickfla1/utilities";
+import { readFileSync } from "fs";
 
-const {
+import {
   T_ROCK,
   T_PAPER,
   T_SCISSORS,
-  OUTCOME_LOST,
-  OUTCOME_DRAW,
-  OUTCOME_WON,
-  DECODED_SCORE,
   OUTCOME_SCORE,
-} = require("./utils");
+  DECODED_SCORE,
+} from "./constants.js";
+import { calculateOutcome } from "./shared.js";
 
 /**
  * Input contents.
@@ -36,22 +35,6 @@ const DECODE_MAP = {
   Z: T_SCISSORS,
 };
 
-function calculateOutcome(a, b) {
-  if (a === b) {
-    return OUTCOME_DRAW;
-  }
-
-  if (
-    (a === T_ROCK && b === T_SCISSORS) ||
-    (a === T_PAPER && b === T_ROCK) ||
-    (a === T_SCISSORS && b === T_PAPER)
-  ) {
-    return OUTCOME_WON;
-  }
-
-  return OUTCOME_LOST;
-}
-
 function calculateRoundScore(player, opponent) {
   const baseScore = DECODED_SCORE[player];
   const outcomeScore = OUTCOME_SCORE[calculateOutcome(player, opponent)];
@@ -71,9 +54,7 @@ function main() {
     return calculateRoundScore(player, opponent);
   });
 
-  const totalScore = scores.reduce((p, c) => {
-    return p + c;
-  }, 0);
+  const totalScore = sumOf(scores);
 
   console.log(">", totalScore);
 }

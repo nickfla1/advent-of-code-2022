@@ -1,4 +1,5 @@
-const { readFileSync } = require("fs");
+import { sumOf, chunkArray } from "@nickfla1/utilities";
+import { readFileSync } from "fs";
 
 const INPUT_FILE = "input.txt";
 
@@ -33,21 +34,6 @@ function findDuplicateInGroup(a, b, c) {
   }
 }
 
-function sumScores(scores) {
-  return scores.reduce((p, c) => {
-    return p + c;
-  }, 0);
-}
-
-function chunkArray(array, size) {
-  const res = [];
-  for (let i = 0; i < array.length; i += size) {
-    res.push(array.slice(i, i + size));
-  }
-
-  return res;
-}
-
 function partOne(rucksacks) {
   const compartments = rucksacks.map((rucksack) => {
     const half = rucksack.length / 2;
@@ -61,7 +47,7 @@ function partOne(rucksacks) {
     return getPriorityScore(findDuplicatedItem(first, second));
   });
 
-  return sumScores(duplicateScores);
+  return sumOf(duplicateScores);
 }
 
 function partTwo(rucksacks) {
@@ -70,7 +56,7 @@ function partTwo(rucksacks) {
     return getPriorityScore(badge);
   });
 
-  return sumScores(scores);
+  return sumOf(scores);
 }
 
 function main() {

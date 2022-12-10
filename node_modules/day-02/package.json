@@ -1,7 +1,11 @@
 {
   "name": "day-02",
+  "type": "module",
   "scripts": {
     "p1": "node part-1.js",
     "p2": "node part-2.js"
+  },
+  "dependencies": {
+    "@nickfla1/utilities": "workspace:^"
   }
 }

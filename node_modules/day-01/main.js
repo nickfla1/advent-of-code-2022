@@ -1,4 +1,5 @@
-const { readFileSync } = require("fs");
+import { sumOf } from "@nickfla1/utilities";
+import { readFileSync } from "fs";
 
 const INPUT_FILE = "input.txt";
 
@@ -11,9 +12,7 @@ function partTwo(caloriesPerElf) {
   const sortedArray = copiedArray.sort((a, b) => (a > b ? -1 : 1));
   const topThree = sortedArray.slice(0, 3);
 
-  return topThree.reduce((p, c) => {
-    return p + c;
-  }, 0);
+  return sumOf(topThree);
 }
 
 function main() {

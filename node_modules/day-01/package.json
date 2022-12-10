@@ -1,6 +1,10 @@
 {
   "name": "day-01",
+  "type": "module",
   "scripts": {
     "start": "node main.js"
+  },
+  "dependencies": {
+    "@nickfla1/utilities": "workspace:^"
   }
 }

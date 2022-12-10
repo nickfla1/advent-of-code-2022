@@ -26,15 +26,13 @@ const OUTCOME_SCORE = {
   [OUTCOME_WON]: SCORE_ROUND_WON,
 };
 
-module.exports = {
+export {
   T_ROCK,
   T_PAPER,
   T_SCISSORS,
-
   OUTCOME_LOST,
   OUTCOME_DRAW,
   OUTCOME_WON,
-
   DECODED_SCORE,
   OUTCOME_SCORE,
 };

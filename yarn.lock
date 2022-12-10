@@ -4,6 +4,12 @@
 __metadata:
   version: 6
 
+"@nickfla1/utilities@workspace:^, @nickfla1/utilities@workspace:utilities":
+  version: 0.0.0-use.local
+  resolution: "@nickfla1/utilities@workspace:utilities"
+  languageName: unknown
+  linkType: soft
+
 "advent-of-code-2022@workspace:.":
   version: 0.0.0-use.local
   resolution: "advent-of-code-2022@workspace:."
@@ -13,17 +19,23 @@ __metadata:
 "day-01@workspace:days/01":
   version: 0.0.0-use.local
   resolution: "day-01@workspace:days/01"
+  dependencies:
+    "@nickfla1/utilities": "workspace:^"
   languageName: unknown
   linkType: soft
 
 "day-02@workspace:days/02":
   version: 0.0.0-use.local
   resolution: "day-02@workspace:days/02"
+  dependencies:
+    "@nickfla1/utilities": "workspace:^"
   languageName: unknown
   linkType: soft
 
 "day-03@workspace:days/03":
   version: 0.0.0-use.local
   resolution: "day-03@workspace:days/03"
+  dependencies:
+    "@nickfla1/utilities": "workspace:^"
   languageName: unknown
   linkType: soft
