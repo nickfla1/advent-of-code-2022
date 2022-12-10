@@ -8,6 +8,7 @@
   "scripts": {
     "day-01": "yarn workspace day-01",
     "day-02": "yarn workspace day-02",
-    "day-03": "yarn workspace day-03"
+    "day-03": "yarn workspace day-03",
+    "day-04": "yarn workspace day-04"
   }
 }
