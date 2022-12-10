@@ -45,3 +45,9 @@ __metadata:
   resolution: "day-04@workspace:days/04"
   languageName: unknown
   linkType: soft
+
+"day-05@workspace:days/05":
+  version: 0.0.0-use.local
+  resolution: "day-05@workspace:days/05"
+  languageName: unknown
+  linkType: soft
