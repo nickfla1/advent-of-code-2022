@@ -13,3 +13,15 @@ export function chunkArray(array, size) {
 
   return res;
 }
+
+/**
+ * Returns if the input array contains any duplicates
+ *
+ * @param {Array} array
+ * @returns {Boolean}
+ */
+export function hasDupicates(array) {
+  const set = new Set(array);
+
+  return set.size !== array.length;
+}

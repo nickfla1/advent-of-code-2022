@@ -10,6 +10,7 @@
     "day-02": "yarn workspace day-02",
     "day-03": "yarn workspace day-03",
     "day-04": "yarn workspace day-04",
-    "day-05": "yarn workspace day-05"
+    "day-05": "yarn workspace day-05",
+    "day-06": "yarn workspace day-06"
   }
 }

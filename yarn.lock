@@ -51,3 +51,11 @@ __metadata:
   resolution: "day-05@workspace:days/05"
   languageName: unknown
   linkType: soft
+
+"day-06@workspace:days/06":
+  version: 0.0.0-use.local
+  resolution: "day-06@workspace:days/06"
+  dependencies:
+    "@nickfla1/utilities": "workspace:^"
+  languageName: unknown
+  linkType: soft
